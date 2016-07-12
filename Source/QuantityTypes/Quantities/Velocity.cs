@@ -110,6 +110,7 @@ namespace QuantityTypes
             get { return KnotField; }
         }
 
+        [Unit("mph")]
         public static Velocity MilePerHour
         {
             get { return MilePerHourField; }
