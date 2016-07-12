@@ -49,6 +49,11 @@ namespace QuantityTypes
         private static readonly Velocity KnotField = new Velocity(0.514444444444444);
 
         /// <summary>
+        /// The backing field for the <see cref="MilePerHour" /> property.
+        /// </summary>
+        private static readonly Velocity MilePerHourField = Length.Mile / Time.Hour;
+
+        /// <summary>
         /// The value.
         /// </summary>
         private double value;
@@ -103,6 +108,11 @@ namespace QuantityTypes
         public static Velocity Knot
         {
             get { return KnotField; }
+        }
+
+        public static Velocity MilePerHour
+        {
+            get { return MilePerHourField; }
         }
 
         /// <summary>
