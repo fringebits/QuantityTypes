@@ -33,6 +33,8 @@ namespace QuantityTypes
 #endif
     public partial struct Time : IQuantity<Time>
     {
+        public static Time Zero => new Time(0.0);
+
         /// <summary>
         /// The backing field for the <see cref="Second" /> property.
         /// </summary>
