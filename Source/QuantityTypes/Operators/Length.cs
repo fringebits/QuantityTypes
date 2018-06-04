@@ -16,6 +16,8 @@ namespace QuantityTypes
     /// </summary>
     public partial struct Length
     {
+        public static Length Zero => new Length(0.0);
+
         /// <summary>
         ///     Implements the operator /.
         /// </summary>

@@ -16,6 +16,8 @@ namespace QuantityTypes
     /// </summary>
     public partial struct Velocity
     {
+        public static Velocity Zero => new Velocity(0.0);
+
         /// <summary>
         ///     Implements the operator /.
         /// </summary>
