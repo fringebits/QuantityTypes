@@ -11,6 +11,8 @@ namespace Forte
 {
     using System;
     using System.ComponentModel;
+    using QuantityTypes;
+    using Units;
 
     /// <summary>
     /// Represents a MomentOfForce.
@@ -44,7 +46,7 @@ namespace Forte
         /// <summary>
         /// Gets the value.
         /// </summary>
-        internal double Value
+        public double Value
         {
             get
             {

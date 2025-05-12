@@ -29,7 +29,7 @@ namespace QuantityTypes
     [DataContract]
 #if !PCL
     [Serializable]
-    [TypeConverter(typeof(QuantityTypeConverter<Curvature>))]
+    [TypeConverter(typeof(Units.QuantityTypeConverter<Curvature>))]
 #endif
     public partial struct Curvature : IQuantity<Curvature>
     {

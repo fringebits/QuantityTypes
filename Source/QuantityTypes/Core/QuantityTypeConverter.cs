@@ -12,6 +12,7 @@ namespace Units
     using System;
     using System.ComponentModel;
     using System.Globalization;
+    using QuantityTypes;
 
     /// <summary>
     /// Implements a generic type converter from string to quantity types.

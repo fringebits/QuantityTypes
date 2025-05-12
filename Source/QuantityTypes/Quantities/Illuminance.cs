@@ -29,7 +29,7 @@ namespace QuantityTypes
     [DataContract]
 #if !PCL
     [Serializable]
-    [TypeConverter(typeof(QuantityTypeConverter<Illuminance>))]
+    [TypeConverter(typeof(Units.QuantityTypeConverter<Illuminance>))]
 #endif
     public partial struct Illuminance : IQuantity<Illuminance>
     {

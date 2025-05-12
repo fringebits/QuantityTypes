@@ -29,7 +29,7 @@ namespace QuantityTypes
     [DataContract]
 #if !PCL
     [Serializable]
-    [TypeConverter(typeof(QuantityTypeConverter<Length>))]
+    [TypeConverter(typeof(Units.QuantityTypeConverter<Length>))]
 #endif
     public partial struct Length : IQuantity<Length>
     {

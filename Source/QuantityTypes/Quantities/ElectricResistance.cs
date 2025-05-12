@@ -29,7 +29,7 @@ namespace QuantityTypes
     [DataContract]
 #if !PCL
     [Serializable]
-    [TypeConverter(typeof(QuantityTypeConverter<ElectricResistance>))]
+    [TypeConverter(typeof(Units.QuantityTypeConverter<ElectricResistance>))]
 #endif
     public partial struct ElectricResistance : IQuantity<ElectricResistance>
     {

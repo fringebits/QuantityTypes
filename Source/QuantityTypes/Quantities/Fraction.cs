@@ -29,7 +29,7 @@ namespace QuantityTypes
     [DataContract]
 #if !PCL
     [Serializable]
-    [TypeConverter(typeof(QuantityTypeConverter<Fraction>))]
+    [TypeConverter(typeof(Units.QuantityTypeConverter<Fraction>))]
 #endif
     public partial struct Fraction : IQuantity<Fraction>
     {

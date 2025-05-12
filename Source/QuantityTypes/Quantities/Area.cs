@@ -29,7 +29,7 @@ namespace QuantityTypes
     [DataContract]
 #if !PCL
     [Serializable]
-    [TypeConverter(typeof(QuantityTypeConverter<Area>))]
+    [TypeConverter(typeof(Units.QuantityTypeConverter<Area>))]
 #endif
     public partial struct Area : IQuantity<Area>
     {

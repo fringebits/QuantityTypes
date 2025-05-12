@@ -9,7 +9,7 @@ namespace UnitDemo
     using System;
     using System.IO;
 
-    public partial struct Length : IQuantity<Length>
+    public partial struct Length : QuantityTypes.IQuantity<Length>
     {
         [Unit("m", true)]
         public static Length Meter = new Length(1);
@@ -22,6 +22,17 @@ namespace UnitDemo
         public Length(double value)
         {
             this.value = value;
+        }
+
+        /// <summary>
+        /// Gets the value of the flow in the base unit.
+        /// </summary>
+        public double Value
+        {
+            get
+            {
+                return this.value;
+            }
         }
 
         public static Length operator +(Length l1, Length l2)

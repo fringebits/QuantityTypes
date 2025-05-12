@@ -22,6 +22,7 @@ namespace QuantityTypes
     using System.Globalization;
     using System.Runtime.Serialization;
     using System.Xml.Serialization;
+    using Units;
 
     /// <summary>
     /// Represents the volume quantity.

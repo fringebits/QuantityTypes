@@ -16,21 +16,18 @@
 namespace QuantityTypes
 {
     using System;
-#if !PCL
     using System.ComponentModel;
-#endif
     using System.Globalization;
     using System.Runtime.Serialization;
     using System.Xml.Serialization;
+    using Units;
 
     /// <summary>
     /// Represents the linear momentum quantity.
     /// </summary>
     [DataContract]
-#if !PCL
     [Serializable]
     [TypeConverter(typeof(QuantityTypeConverter<LinearMomentum>))]
-#endif
     public partial struct LinearMomentum : IQuantity<LinearMomentum>
     {
         /// <summary>

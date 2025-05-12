@@ -11,6 +11,8 @@ namespace Forte
 {
     using System;
     using System.ComponentModel;
+    using QuantityTypes;
+    using Units;
 
     /// <summary>
     /// Represents a ShortLength.
